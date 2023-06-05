@@ -3,7 +3,7 @@ const allboxes = document.querySelectorAll('.box')
 const allPills = document.querySelectorAll('.pill')
 const allHiddenPills = document.querySelectorAll('.hidden-pill')
 const allArrows = document.querySelectorAll('.arrow')
-const body = document.querySelectorAll('body')
+const body = document.querySelector('body')
 const expandPill = document.querySelector('#expand')
 const BigX = document.querySelector('#big-x')
 const SvgBig = document.querySelector('#big-x-svg')
@@ -109,9 +109,9 @@ const moveSlider = () =>{
         addTheme('white', '2px', 'white', 0.5, 'rgb(38,38,38', '50px', null, 'white')
    }
    if(sliderValue == 10){
-        addTheme('rgb(38,38,38', '12px', 'white', 1, 'black', 0, transparent, 'white')
+        addTheme('rgb(38,38,38)', '12px', 'white', 1, 'black', 0, 'transparent', 'white')
    }
-   console.log(sliderValue)
+//    console.log(sliderValue)
 }
 
 sliderInput.addEventListener('input', moveSlider)
